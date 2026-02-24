@@ -1,18 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Main Slider Logic (Carrusel 1 -> Carrusel 2 every 3s)
-    const mainSlider = document.getElementById('main-slider');
-    let isSecondImage = false;
-
-    if (mainSlider) {
-        setInterval(() => {
-            if (isSecondImage) {
-                mainSlider.style.transform = 'translateX(0%)';
-            } else {
-                mainSlider.style.transform = 'translateX(-50%)';
-            }
-            isSecondImage = !isSecondImage;
-        }, 3000);
-    }
 
     // 2. Testimonios Carousel Logic with Buttons and Auto-scroll
     const testimonioTrack = document.querySelector('.testimonio-track');
